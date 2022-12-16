@@ -1,4 +1,4 @@
-export { default as Navbar } from './Navbar.jsx';
+export { default as NavBar } from './NavBar.jsx';
 export { default as Cart } from './Cart.jsx';
 export { default as Hero } from './Hero.jsx';
 export { default as Sales } from './Sales.jsx';

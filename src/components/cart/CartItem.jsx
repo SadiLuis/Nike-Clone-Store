@@ -23,7 +23,9 @@ const CartItem = ({ item: { id, title, text, img, color, shadow, price, cartQuan
         <div className="flex items-center gap-5">
           <div className={`bg-gradient-to-b ${color} ${shadow} relative rounded p-3 hover:scale-105 transition-all duration-75 ease-in-out grid items-center`}>
             <img src={img} alt={`img/cart-item/${id}`} className="w-36 h-auto object-fill lg:w-28" />
-            <div className='absolute right-1 top-1 blur-theme-effect bg-white/80 text-black text-xs px-1 rounded'>${price}</div>
+            <div className='absolute right-1 top-1 blur-theme-effect shadow-lg shadow-white/60 bg-white/80 text-black text-xs px-1 rounded'>
+            ${price}
+            </div>
           </div>
           <div className="grid items-center gap-4">
             <div className="grid items-center leading-none">
@@ -46,7 +48,7 @@ const CartItem = ({ item: { id, title, text, img, color, shadow, price, cartQuan
             <h1 className="text-lg lg:text-base text-slate-900 font-medium">${price * cartQuantity}</h1>
           </div>
           <div className="grid items-center justify-center">
-            <button type="button" className="bg-theme-cart rounded p-1 lg:p-0.5 grid items-center justify-items-center cursor-pointer" onClick={onRemoveItem}>
+            <button type="button" className="bg-red-500 hover:scale-110 shadow-lg shadow-black rounded-full p-1 lg:p-0.5 grid items-center justify-items-center cursor-pointer" onClick={onRemoveItem}>
               <TrashIcon className="w-5 h-5 text-white" />
             </button>
           </div>

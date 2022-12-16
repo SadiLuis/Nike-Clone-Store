@@ -24,8 +24,8 @@ const Footer = ({ footerAPI: { titles, links } }) => {
               </ul>
             ))}
           </div>
-          <div className='mt-5 text-center'>
-            <p className='text-sm md:text-center'>Copyright<sup className='text-base font-bold'>&copy;</sup> All Reserved Rights <span className='font-semibold'>JSSTACK DEVELOPERS {Year}</span></p>
+          <div className='mt-5 text-black '>
+            <p className='text-sm md:text-center'>Copyright<sup className='text-base font-bold'>&copy;</sup> All Reserved Rights <span className='font-semibold '>Sadi_Dev {Year}</span></p>
           </div>
         </div>
       </footer>

@@ -5,7 +5,7 @@ import { selectTotalQTY, setOpenCart } from '../app/CartSlice.js';
 import { HeartIcon, MagnifyingGlassIcon, ShoppingBagIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/logo.png';
 
-const Navbar = () => {
+const NavBar = () => {
     const [navState, setNavState] = useState(false);
     const dispatch = useDispatch();
     const totalQTY = useSelector(selectTotalQTY);
@@ -63,4 +63,4 @@ return (
   )
 }
 
-export default Navbar
+export default NavBar
